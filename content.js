@@ -1,1 +1,0 @@
-module.exports = "Itoucht works from content.js. And im changed. Now im recompile and reload browser.";
