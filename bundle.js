@@ -399,7 +399,7 @@
 /* 5 */
 /***/ function(module, exports) {
 
-	module.exports = "Itoucht works from content.js.";
+	module.exports = "Itoucht works from content.js. And im changed";
 
 /***/ }
 /******/ ]);
