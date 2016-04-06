@@ -1,0 +1,1 @@
+module.exports = "Itoucht works from content.js.";
