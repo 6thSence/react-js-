@@ -1,11 +1,15 @@
 i did it.
 
-A PRETTIER OUTPUT
+## A PRETTIER OUTPUT
+
 webpack --progress --colors
 
-WATCH MODE
+##WATCH MODE
+
 webpack --progress --colors --watch
 
-DEVELOPMENT SERVER
+##DEVELOPMENT SERVER
+
  // npm install webpack-dev-server -g
+
 webpack-dev-server --progress --colors
