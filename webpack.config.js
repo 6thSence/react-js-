@@ -1,3 +1,7 @@
+const autoprefixer = require('autoprefixer');
+const reporter = require('postcss-browser-reporter');
+const stylelint = require('stylelint');
+
 module.exports = {
     entry: "./src/entry.js",
     output: {
@@ -6,7 +10,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.css$/, loader: "style!css" },
+            { test: /\.css$/, loader: "style!css!postcss-loader" },
             {
                 test: /.js?$/,
                 loader: 'babel-loader',
@@ -16,5 +20,12 @@ module.exports = {
                 }
             }
         ]
+    },
+    postcss: () => {
+        return [
+            autoprefixer,
+            stylelint,
+            reporter()
+        ];
     }
 };
