@@ -1,4 +1,7 @@
 const autoprefixer = require('autoprefixer');
+const nested = require('postcss-nested');
+const assets = require('postcss-assets');
+const short = require('postcss-short');
 const reporter = require('postcss-browser-reporter');
 const stylelint = require('stylelint');
 
@@ -23,6 +26,9 @@ module.exports = {
     },
     postcss: () => {
         return [
+            nested,
+            short,
+            assets,
             autoprefixer,
             stylelint,
             reporter()
