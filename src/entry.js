@@ -1,18 +1,5 @@
-import React from 'react';
+import React  from 'react';
 import ReactDOM from 'react-dom';
+import Main from './containers/main/main';
 
-require("./style.css");
-
-const World = () => {
-    return (
-        <span> World </span>
-    )
-};
-
-class Hello extends React.Component {
-    render() {
-        return <h1 className="red">Hello<World/></h1>
-    }
-};
-
-ReactDOM.render(<Hello/>, document.getElementById('app'));
+ReactDOM.render(<Main/>, document.getElementById('app'));
