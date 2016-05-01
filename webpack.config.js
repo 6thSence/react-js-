@@ -4,6 +4,7 @@ const assets = require('postcss-assets');
 const short = require('postcss-short');
 const reporter = require('postcss-browser-reporter');
 const stylelint = require('stylelint');
+const rulesStyles = require('./stylelintrc.json');
 
 module.exports = {
     entry: "./src/entry.js",
@@ -27,7 +28,7 @@ module.exports = {
             short,
             assets,
             autoprefixer,
-            stylelint,
+            stylelint(rulesStyles),
             reporter()
         ];
     }

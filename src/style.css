@@ -1,5 +1,8 @@
 body {
-    display: flex;
-    margin: 0 !important;
+    margin: 0;
     background: #c4c4c4;
-}
+
+    & .red {
+        color: red;
+        }
+    }
