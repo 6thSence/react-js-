@@ -3,7 +3,7 @@ import styles from './world.css';
 
 const World = () => {
     return (
-        <span className='green'> World </span>
+        <span className={styles.green}> World </span>
     )
 };
 
