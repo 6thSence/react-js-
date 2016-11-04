@@ -19,7 +19,11 @@ module.exports = {
                 loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]!postcss-loader',
                 exclude: /node_modules/
             },
-            { test: /.js?$/, loader: 'babel-loader', exclude: /node_modules/ },
+            { 
+                test: /.js?$/, 
+                loader: 'babel-loader', 
+                exclude: /node_modules/ 
+            },
             {
                 test: /\.json$/,
                 loader: 'json-loader'
